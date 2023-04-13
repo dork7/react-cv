@@ -1,7 +1,7 @@
 header {
     height: 100vh;
     padding-top: 7rem;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .header__container {
@@ -11,6 +11,8 @@ header {
     display: flex;
     align-items: center;
     flex-direction: column;
+    /* overflow: hidden; */
+
 }
 
 .cta {
@@ -45,10 +47,10 @@ header {
     justify-content: center;
     padding: 2rem;
     flex-direction: column;
-    width: 70%;
-    /* background: linear-gradient(var(--color-primary), transparent) */
-    transition: background-color 4s ease;
+    /* width: 70%; */
+    min-width: 70%;
     background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
 }
 
 .header__socials::after,
@@ -57,4 +59,39 @@ header {
     width: 1px;
     height: 1rem;
     background-color: var(--color-primary);
+}
+
+/* ================ MEDIA QUERIES MEDIUM DEVICES) ================= */
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: var(--container-width-md);
+    }
+
+    section {
+        margin-top: 6rem;
+    }
+}
+
+/* ================ MEDIA QUERIES SMALL DEVICES) ================= */
+@media screen and (max-width: 600px) {
+    .cta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+        display: flex;
+        gap: .4rem;
+    }
+
+    .name {
+        font-size: 2rem;
+    }
+
+    .text-light .scroll__down,
+    .header__socials {
+        display: none
+    }
+
 }
