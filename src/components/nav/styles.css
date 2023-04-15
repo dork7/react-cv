@@ -1,8 +1,8 @@
 nav {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     width: max-content;
     display: block;
-    padding: 0.7rem 1.7rem;
+    padding: 0.3rem 1.7rem;
     z-index: 2;
     position: fixed;
     left: 50%;
@@ -11,9 +11,10 @@ nav {
     display: flex;
     gap: 0.8rem;
     border-radius: 3rem;
-    backdrop-filter: blue(15px);
-
+    backdrop-filter: blur(12px);
 }
+
+
 
 nav a {
     background: transparent;
@@ -29,5 +30,5 @@ nav a:hover {
 }
 
 nav a.active {
-    background-color: red;
+    background-color: var(--color-primary);
 }

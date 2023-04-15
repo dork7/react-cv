@@ -3,10 +3,10 @@ import './styles.css'
 import { BiHomeAlt, BiUserCircle, BiBookAlt, BiMessageDots } from 'react-icons/bi'
 import { AiOutlineProject } from 'react-icons/ai'
 const Nav = () => {
-    const [activeLink, setActiveLink] = useState("")
+    const [activeLink, setActiveLink] = useState("#")
 
     return (
-        <nav>
+        <nav className='nav_right'>
             <a className={activeLink === "#" ? "active" : ""} href="#" onClick={() => setActiveLink("#")}><BiHomeAlt /></a>
             <a className={activeLink === "about" ? "active" : ""} href="#about" onClick={() => setActiveLink("about")}><BiUserCircle /></a>
             <a className={activeLink === "experience" ? "active" : ""} href="#experience" onClick={() => setActiveLink("experience")}> <BiBookAlt /></a>

@@ -6,9 +6,11 @@
     "city": "Islamabad",
     "country": "Pakistan",
     "phone": "+923455293564",
+    "exp": "5 years",
     "shortDescp": "MERN Stack Developer",
     "description": "MERN stack developer, working as a Software Engineer at Techvista Systems",
     "profileImage": "https://media.licdn.com/dms/image/C4D03AQF1F6OPm1EQag/profile-displayphoto-shrink_400_400/0/1520105306337?e=1686787200&v=beta&t=kbL0IzX2BJLIKAPUYi5Umu-a90LRWTR1pyb6_vI0Vxg",
+    "project_count": "30+",
     "links": {
         "facebook": "#",
         "instagram": "#",
