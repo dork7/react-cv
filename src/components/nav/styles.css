@@ -1,8 +1,8 @@
 nav {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     width: max-content;
     display: block;
-    padding: 0.7rem 1.7rem;
+    padding: 0.3rem 1.7rem;
     z-index: 2;
     position: fixed;
     left: 50%;
@@ -11,9 +11,61 @@ nav {
     display: flex;
     gap: 0.8rem;
     border-radius: 3rem;
-    backdrop-filter: blue(15px);
+    backdrop-filter: blur(12px);
+}
+
+.animate_nav {
+    animation: nav_animation 2s linear;
+}
+
+@keyframes nav_animation {
+
+    /* from {
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    to {
+
+        left: 80%;
+        transform: translate(-80%);
+        transform: rotate(-90deg);
+        bottom: 15rem;
+    } */
+    from {
+        transform: translateY(0em)
+    }
+
+    to {
+        transform: translateY(3em)
+    }
+
 
 }
+
+
+.animate_nav_icon {
+    animation: navIconAnimation 2s linear;
+}
+
+@keyframes navIconAnimation {
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: yellow;
+    }
+
+    50% {
+        background-color: blue;
+    }
+
+    100% {
+        background-color: green;
+    }
+}
+
 
 nav a {
     background: transparent;
@@ -29,5 +81,5 @@ nav a:hover {
 }
 
 nav a.active {
-    background-color: red;
+    background-color: var(--color-primary);
 }
