@@ -6,7 +6,7 @@ const Nav = () => {
     const [activeLink, setActiveLink] = useState("#")
 
     return (
-        <nav className='nav_right'>
+        <nav>
             <a className={activeLink === "#" ? "active" : ""} href="#" onClick={() => setActiveLink("#")}><BiHomeAlt /></a>
             <a className={activeLink === "about" ? "active" : ""} href="#about" onClick={() => setActiveLink("about")}><BiUserCircle /></a>
             <a className={activeLink === "experience" ? "active" : ""} href="#experience" onClick={() => setActiveLink("experience")}> <BiBookAlt /></a>

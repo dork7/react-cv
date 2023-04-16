@@ -14,6 +14,57 @@ nav {
     backdrop-filter: blur(12px);
 }
 
+.animate_nav {
+    animation: nav_animation 2s linear;
+}
+
+@keyframes nav_animation {
+
+    /* from {
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    to {
+
+        left: 80%;
+        transform: translate(-80%);
+        transform: rotate(-90deg);
+        bottom: 15rem;
+    } */
+    from {
+        transform: translateY(0em)
+    }
+
+    to {
+        transform: translateY(3em)
+    }
+
+
+}
+
+
+.animate_nav_icon {
+    animation: navIconAnimation 2s linear;
+}
+
+@keyframes navIconAnimation {
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: yellow;
+    }
+
+    50% {
+        background-color: blue;
+    }
+
+    100% {
+        background-color: green;
+    }
+}
 
 
 nav a {
