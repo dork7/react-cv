@@ -10,14 +10,18 @@ function App() {
 
   return (
     <div>
-      <ParticleBG />
-      {/* <Header />
-      <Nav />
-      <About />
-      <Experience />
-      <Projects />
-      <Contact /> */}
-      {/* </ParticleBG> */}
+      <div style={{
+        position: "absolute",
+        "zIndex": 2
+      }}>
+
+        <Nav />
+        <Header />
+        <About />
+        <Experience />
+        <Projects />
+        <Contact />
+      </div>
     </div>
   )
 }

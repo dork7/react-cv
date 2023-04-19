@@ -1,7 +1,11 @@
 export const ParticalConfig = {
     "particles": {
+        fullScreen: {
+            enable: true, // enabling this will make the canvas fill the entire screen, it's enabled by default
+            zIndex: -2, // this is the z-index value used when the fullScreen is enabled, it's 0 by default
+        },
         "number": {
-            "value": 6,
+            "value": 100,
             "density": {
                 "enable": true,
                 "value_area": 800

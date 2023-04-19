@@ -20,10 +20,10 @@ const ParticleBG = () => {
     }, []);
     return (
         <div>
-            {/* init={particlesInit} */}
-            {/* loaded={particlesLoaded} */}
 
             <Particles
+                init={particlesInit}
+                loaded={particlesLoaded}
                 id="tsparticles"
                 options={ParticalConfig}
             >
