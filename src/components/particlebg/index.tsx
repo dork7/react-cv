@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useMemo } from "react";
 import Particles from "react-tsparticles";
 import type { Container, Engine } from "tsparticles-engine";
 import { loadFull } from "tsparticles";
@@ -18,6 +18,10 @@ const ParticleBG = () => {
     const particlesLoaded = useCallback(async (container: Container | undefined) => {
         await console.log(container);
     }, []);
+
+    const options = useMemo(() => {
+        return ParticalConfig
+    }, []);
     return (
         <div>
 
@@ -25,7 +29,7 @@ const ParticleBG = () => {
                 init={particlesInit}
                 loaded={particlesLoaded}
                 id="tsparticles"
-                options={ParticalConfig}
+                options={options}
             >
 
 

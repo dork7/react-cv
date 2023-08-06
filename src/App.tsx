@@ -10,6 +10,7 @@ function App() {
 
   return (
     <div>
+      <ParticleBG />
       <div style={{
         position: "absolute",
         "zIndex": 2
